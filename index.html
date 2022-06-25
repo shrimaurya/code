@@ -1,92 +1,54 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>code</title>
- </head>
- <body>
-     <h1>ready to learn code<br> &lt;&Backslash;h1&gt;</h1>
-     <h2><hr> to learn code</h2>
-     <h3>ready to learn code</h3>
-     <h4>ready to learn code</h4>
-     <h5>ready to learn code</h5>
-     <h6>ready to learn code</h6>
-     <hr>
-     <p> <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</b> <i><b> deserunt qui asperiores delectus ea quae nemo odit odio consectetur</b></i><small>cumque temporibus,</small>10 <sup>3</sup> 15 <sub>2</sub> ipsam, eum magnam recusandae officia, quis nostrum dolores?
-    </p>
-    <hr>
-    <h2>shopping list</h2>
-    <ol type="A">
-        <li>milk</li>
-        <li>medicine</li>
-        <ul>
-            <li>torex</li>
-            <li>paracetamol</li>
-        </ul>
-        <li>ghee</li>
-        <li>butter</li>
-    </ol>
-    <hr>
-    <h2>to do list</h2>
-    <ul>
-        <li>hindi</li>
-        <li>english</li>
-        <li>math</li>
-    </ul>
-    <hr>
-    <a href="http://www.facebook.com" target="_blank">facebook</a>
-    <a href="page2.html">page2</a>
-    <a href="https://drive.google.com/drive/folders/1oYdS8xr4pU8si-6-UBQidV_xw1n-rdB2" target="_blank" rel="noopener noreferrer"><h2>notes</h2></a>
-    <a href="pdf/jE9XHjeeBFEZVZ3iZcbl1593449656.pdf" target="_blank">pdf</a><br>
-    <a href="pdf/EAadhaar.pdf" target="_blank">pdf</a>
-    <hr>
-    <img src="image/signature.jpg" alt="signature" width="300">
-    <hr>
-    <video src="video/WIN_20220509_10_58_08_Pro.mp4" width="400" controls loop muted poster="image/signature.jpg"></video>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/D3WbOPDxkx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
 
-    <iframe src="https://www.danlok.com" frameborder="0" width="560" height="600"></iframe>
+    </head>
+
+<body>
+    <div class="container">
+    <form action="" method="get">
+    <h1 class="main_heading" style="color: #4daea1" >Payment Form</h1>
     <hr>
-    <table>
-         <thead>
-         <tr>
-             <th>subject</th>
-             <th>theory</th>
-             <th>practical</th>
-             <th>total marks</th>
-             <th>grade</th>
-             </tr>
-            </thead>
-            <tbody>
-                ,<tr>
-                    <td>physics</td>
-                    <td>45</td>
-                    <td>60</td>
-                    <td>74</td>
-                    <td>A2</td>
-                </tr>
-                <tr>
-                    <td>chemistry</td>
-                    <td>33</td>
-                    <td>65</td>
-                    <td>56</td>
-                    <td>A3</td>
-                </tr>
-                <tr>
-                    <td>math</td>
-                    <td>80</td>
-                    <td>73</td>
-                    <td>66</td>
-                    <td>B2</td>
-                </tr>
-                <tfoot>
-                    <th colspan="5">result:pass</th>
-                </tfoot>
-            </tbody>
-    </table>
+    
+    <h2>Contact Information</h2>
+   
+
+    <p>Name: *<input type="text" name="name" required placeholder="rohan"></p>
+     
+     <fieldset>
+          <legend>gender *</legend>
+          <p>male <input type="radio" name="gender" id="male" required></p>
+          <p>female <input type="radio" name="gender" id="female" required></p>
+    </fieldset>
+
+    <p>Address: <textarea name="address" id="address" cols="100" rows="6" placeholder="your address"></textarea></p>
+
+    <p>Email: *<input type="email" name="email" id="email" required placeholder="123@gmail.com"></p>
+    
+    <p>Pincode: <input type="number" name="pincode" id="pincode" placeholder="123456"></p>
+    <hr>
+     
+    <h2>Payment information</h2>
+    
+    <p>card type:
+        <select name="card_type" id="card_type">
+        <option value="">Select a card type</option>
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="rupay">rupay</option>
+        </select>
+
+    <p>Card No. <input type="number" name="card_number" id="card-number" placeholder="111 222 3333"></p>
+
+    <p>Expiry Date: <input type="date" name="exp_date" id="exp_date"></p>
+
+    <p>CVV: <input type="password" name="CVV" id="CVV" placeholder="123"></p>
+    <input type="submit" value="Pay Now">
+    </form>
 </body>
- </html>
-
-
+</html>
